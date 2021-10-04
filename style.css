@@ -1,0 +1,169 @@
+body {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+#hero  {
+    padding: 0rem 0rem 0rem 0rem;
+}
+
+.footer {
+  background: rgb(49, 49, 49);
+  position:relative;
+    bottom:0;
+    width:100%;
+    height:60px;
+  color:cornflowerblue;
+  
+}
+
+.section {
+  flex-grow: 1;
+}
+
+.container form {
+  padding-top: 2rem;
+}
+
+.dark {
+  background: rgb(49, 49, 49);
+  padding: 2rem;
+  
+}
+
+.darkMenu{
+  background: rgb(49,49,49);
+  padding: 1rem 0rem 1em 0rem;
+}
+
+aside .menu-list {
+  padding-left: 1rem;
+  padding-right: .2rem;
+}
+
+div h1 {
+  display: block;
+  color: white;
+}
+
+.title {
+  color: #f2f8f9;
+  
+}
+
+.subtitle {
+  color: cornflowerblue
+}
+
+.card {
+  box-shadow: 0 0.5em 1em -0.125em rgb(30 30 30 / 45%), 0 0 0 1px rgb(10 10 10 / 2%);
+}
+
+.card-text {
+  color: rgb(49, 49, 49);
+  font-size: xx-large;
+  font-weight: bold;
+  line-height: 1.2;
+  
+}
+
+.card1 {
+  display: block;
+  position: relative;
+
+  background-color: #f2f8f9;
+  border-radius: 4px;
+  text-decoration: none;
+  z-index: 0;
+  overflow: hidden;
+}
+.card1:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: -16px;
+  right: -16px;
+  background: cornflowerblue;
+  height: 32px;
+  width: 32px;
+  border-radius: 32px;
+  transform: scale(1);
+  transform-origin: 50% 50%;
+  transition: transform 0.25s ease-out;
+}
+.card1:hover:before {
+  transform: scale(50);
+}
+
+.card1:hover p {
+  transition: all 0.3s ease-out;
+  color: rgba(255, 255, 255);
+}
+.card1:hover h3 {
+  transition: all 0.3s ease-out;
+  color: #ffffff;
+}
+
+
+.grid {
+   padding-top: 2rem;
+  padding-bottom: 2rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 2.5em;
+  padding-inline: 1.5em;
+}
+
+.card-grid {
+/*  background: cornflowerblue; */
+  min-height: 15em;
+  display: grid;
+  grid-template-rows: 2fr 1fr;
+  height: 100%;
+  align-items: center;
+}
+
+.view-poll {
+/*   align-self:end; */
+  align-items: center;
+  
+}
+
+.media-content {
+  min-height: 100%;
+}
+ h1 {color: white;}
+
+@media screen and (max-width: 768px){
+.media-content {
+    overflow-x: visible;
+  }}
+  
+
+
+@media (min-width: 1024px) {
+.grid {
+  padding-top: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 2.5em;
+}
+/*   .title, .subtitle{
+  padding-left: 3rem;
+} */
+}
+@media (min-width: 1408px) {
+.grid {
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr ;
+  grid-gap: 2.5em;
+}
+}
+
+
+
+
+
